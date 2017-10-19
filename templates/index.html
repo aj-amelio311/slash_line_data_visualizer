@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link href="{{ url_for ('static', filename='style.css')}}" rel="stylesheet" text="stylesheet/css">
+    <title></title>
+</head>
+
+<body>
+
+    <h1 class="headText">Slash Line Data Visualizer</h1>
+
+    <section id="contact" class="content-section text-center">
+        <div class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <form class="form-horizontal" id="search_box">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Enter a baseball player's name:">
+                            </div>
+                            <button type="submit" class="btn btn-default">Search</button>
+                        </form>
+
+                        <div class="content">
+                            <h5 id="player_name"></h5>
+                            <div id="error"></div>
+                            <div id="key" class="hideMe">
+                                <div id="swatch-red">AVG</div>
+                                <div id="swatch-pink">OBP</div>
+                                <div id="swatch-yellow">SLG</div>
+                            </div>
+                            <div class="ct-chart ct-perfect-fourth" id="graph"></div>
+                            <h5 id="age"></h5>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+
+</html>

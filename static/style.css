@@ -1,0 +1,64 @@
+body {
+    background: #d4ebf5;
+}
+.sButton {
+    width: 300px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.headText {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+#player_name {
+    text-transform: capitalize;
+    margin-top: 30px;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.form-control {
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#swatch-yellow {
+    background: #f4c53f;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    display: inline-block;
+}
+#swatch-red {
+    background: #d80e03;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    display: inline-block;
+}
+#swatch-pink {
+    background: #ef5044;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    display: inline-block;
+}
+#key {
+    margin-bottom: 40px;
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+#age {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.hideMe {
+    display: none;
+}
