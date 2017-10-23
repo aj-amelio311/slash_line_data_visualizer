@@ -118,7 +118,5 @@ def process():
 		})
 	return jsonify({'error': 'no data'})
 
-#sever error
-
 if __name__ == "__main__":
     app.run()
